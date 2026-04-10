@@ -5,36 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
 </head>
 <body class="bg-[#111111] text-white min-h-screen font-sans">
 
-  <!-- NAVBAR -->
-  <nav class="flex items-center justify-between mt-[30px]">
-    <!-- Nav Links -->
-    <div class="flex-1 flex items-center justify-center gap-12 mr-[100px]">
-      <a href="#" class="text-white font-medium text-xl tracking-wide hover:text-gray-400 transition-colors">Home</a>
-      <a href="#" class="text-gray-400 font-medium text-xl tracking-wide hover:text-white transition-colors">Services</a>
-      <a href="#" class="text-gray-400 font-medium text-xl tracking-wide hover:text-white transition-colors">About me</a>
-      <a href="#" class="text-gray-400 font-medium text-xl tracking-wide hover:text-white transition-colors">Portfolio</a>
-      <a href="#" class="text-gray-400 font-medium text-xl tracking-wide hover:text-white transition-colors">Contact me</a>
+  <nav class="px-6 py-4">
+
+    <div class="flex items-center justify-between">
+
+      <!-- Logo / Name -->
+      <h1 class="text-white text-lg font-semibold">Lykha</h1>
+
+      <!-- Burger Button -->
+      <button id="menu-btn" class="lg:hidden text-white text-2xl">
+        ☰
+      </button>
+
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex items-center gap-12">
+        <a href="#" class="text-white">Home</a>
+        <a href="#" class="text-gray-400 hover:text-white">Services</a>
+        <a href="#" class="text-gray-400 hover:text-white">About me</a>
+        <a href="#" class="text-gray-400 hover:text-white">Skills</a>
+        <a href="#" class="text-gray-400 hover:text-white">Portfolio</a>
+        <a href="#" class="text-gray-400 hover:text-white">Contact me</a>
+
+        <button class="bg-white text-black px-6 py-2 rounded">
+          Hire Me
+        </button>
+      </div>
+
     </div>
-    <!-- Hire Me Button -->
-    <button class="bg-white text-black font-medium text-lg px-8 py-1.5 rounded hover:bg-gray-400 transition-colors mr-[60px]">
-      Hire Me
-    </button>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden flex-col items-center mt-6 gap-4 lg:hidden">
+
+      <a href="#" class="text-white">Home</a>
+      <a href="#" class="text-gray-400">Services</a>
+      <a href="#" class="text-gray-400">About me</a>
+      <a href="#" class="text-gray-400">Skills</a>
+      <a href="#" class="text-gray-400">Portfolio</a>
+      <a href="#" class="text-gray-400">Contact me</a>
+
+      <button class="bg-white text-black px-6 py-2 rounded">
+        Hire Me
+      </button>
+
+    </div>
+
   </nav>
 
-  <!-- HERO SECTION -->
  <section class="flex items-center justify-between ml-[150px] mt-[60px]">
 
     <!-- Left: Text Content -->
     <div class="flex flex-col max-w-lg mb-20">
 
       <!-- Greeting -->
-      <p class="text-gray-500 font-medium text-2xl mb-2">Hi I am</p>
+      <p class="text-gray-400 font-medium text-2xl mb-2">Hi I am</p>
 
       <!-- Name -->
-      <p class="text-gray-500 font-medium text-3xl">Ma. Lykha Margarette L. Salustiano</p>
+      <p class="text-gray-400 font-medium text-3xl">Ma. Lykha Margarette L. Salustiano</p>
 
       <!-- Title -->
       <h1 class="text-[80px] font-semibold text-white leading-tight mt-3 whitespace-nowrap">
@@ -78,12 +108,13 @@
 
         </div>
 
-      <!-- CTA Buttons -->
       <div class="flex items-center gap-4 mt-6">
         <button class="bg-white text-black font-medium text-lg px-8 py-2.5 rounded hover:bg-gray-400 transition-colors">
           Hire Me
         </button>
-        <button class="bg-transparent text-white font-medium text-lg px-8 py-2.5 rounded border border-white hover:bg-white hover:text-black transition-all">
+        <button 
+           onclick="window.location.href='files/New_Resume_salustiano.pdf'"
+           class="bg-transparent text-white font-medium text-lg px-8 py-2.5 rounded border border-white hover:bg-white hover:text-black transition-all">
           Download CV
         </button>
       </div>
@@ -92,7 +123,6 @@
 
     <!-- Right: Profile Image -->
     <div class="w-[550px] h-[550px] mr-[100px] mb-20">
-      <!-- Replace src with your actual photo path -->
       <img
         src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775560309/Screenshot_2026-04-07_191137_voeioo.png"
         class="w-full h-full object-cover"
@@ -100,6 +130,140 @@
     </div>
 
   </section>
+
+  <section class="py-16 px-6 text-center">
+    
+    <!-- Title -->
+    <h2 class="text-3xl font-semibold mb-2">Services</h2>
+    <p class="text-gray-400 mb-12">
+      I create clean, user-friendly designs, wireframes, and prototypes using Figma and FlutterFlow.
+    </p>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <!-- Card 1 -->
+      <div class="bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 hover:scale-105 duration-300 text-center">
+        <div class="w-[70px] h-[70px] mx-auto">
+          <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775817693/Screenshot_2026-04-10_183847-removebg-preview_myfcwx.png"
+            class="w-full h-full object-contain" />
+        </div>
+        <h3 class="text-lg font-semibold mb-2">UI/UX Design</h3>
+        <p class="text-gray-400 text-sm">
+          Clean visuals with simple and user-friendly experiences.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 hover:scale-105 duration-300 text-center">
+        <div class="w-[70px] h-[70px] mx-auto">
+          <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775817693/Screenshot_2026-04-10_183847-removebg-preview_myfcwx.png"
+            class="w-full h-full object-contain" />
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Figma Design</h3>
+        <p class="text-gray-400 text-sm">
+          Designing clean UI and interactive prototypes using Figma.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 hover:scale-105 duration-300 text-center">
+        <div class="w-[70px] h-[70px] mx-auto">
+          <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775817693/Screenshot_2026-04-10_183847-removebg-preview_myfcwx.png"
+            class="w-full h-full object-contain" />
+        </div>
+        <h3 class="text-lg font-semibold mb-2">FlutterFlow Development</h3>
+        <p class="text-gray-400 text-sm">
+          Building responsive apps visually with FlutterFlow.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 hover:scale-105 duration-300 text-center">
+        <div class="w-[70px] h-[70px] mx-auto">
+          <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775817693/Screenshot_2026-04-10_183847-removebg-preview_myfcwx.png"
+            class="w-full h-full object-contain" />
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Balsamiq Wireframing</h3>
+        <p class="text-gray-400 text-sm">
+          Creating simple wireframes to plan user interface layouts.
+        </p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 hover:scale-105 duration-300 text-center">
+        <div class="w-[70px] h-[70px] mx-auto">
+          <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775817693/Screenshot_2026-04-10_183847-removebg-preview_myfcwx.png"
+            class="w-full h-full object-contain" />
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Prototyping</h3>
+        <p class="text-gray-400 text-sm">
+          I create interactive designs for users to explore and experience.
+        </p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 hover:scale-105 duration-300 text-center">
+        <div class="w-[70px] h-[70px] mx-auto">
+          <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775817693/Screenshot_2026-04-10_183847-removebg-preview_myfcwx.png"
+            class="w-full h-full object-contain" />
+        </div>
+        <h3 class="text-lg font-semibold mb-2">UX Testing</h3>
+        <p class="text-gray-400 text-sm">
+          I test designs to improve usability and user experience.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="text-white py-20 px-10">
+
+  <!-- Title -->
+  <h2 class="text-3xl font-semibold text-center mb-16">About Me</h2>
+
+  <!-- Container -->
+  <div class="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-16">
+
+    <!-- Image -->
+    <div class="w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden flex-shrink-0 mb-20">
+      <img
+        src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775560309/Screenshot_2026-04-07_191137_voeioo.png"
+        alt="Profile"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- Text Content -->
+    <div class="max-w-[520px] text-gray-400 text-[15px] leading-8 text-justify space-y-6">
+
+      <p>
+       I have recently graduated with a Bachelor of Science degree in Computer Science from the College of Mary Immaculate. My education provided me with an excellent basis in the principles of computer science, but it did more than just that; it made me develop a great interest in the design aspect.
+      </p>
+
+      <p>
+       In the process of obtaining my degree, I conducted my On-the-Job Training at JCAS Logistics, which gave me the opportunity to put my theoretical knowledge into practice and gain practical experience. What is more interesting is that this experience turned out to be quite positive, and consequently, I was offered a part-time job there, which allowed me to combine working with studying. In such a way, I got the chance to familiarize myself with the operations in the logistics sphere and acquire experience as a working professional.
+      <p>
+        My skills include UI/UX Design, Figma, FlutterFlow Development, Balsamiq Wireframing, Prototyping, and UX Testing. When designing the interface of any product, I like creating clear and easily comprehensible designs for users.
+        Now I would like to advance in my career path and take the next step.
+      </p>
+
+      <!-- Button -->
+      <div>
+        <a 
+          href="files/New_Resume_salustiano.pdf" 
+          download
+          class="inline-block mt-4 bg-white text-black font-medium text-sm px-6 py-2 rounded hover:bg-gray-200 transition">
+          Download CV
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 </body>
 </html>
