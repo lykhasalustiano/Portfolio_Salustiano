@@ -9,13 +9,9 @@
 </head>
 <body class="bg-[#111111] text-white min-h-screen font-sans">
 
-  <nav class="px-6 py-4">
+  <nav class="px-6 py-4 ">
 
     <div class="flex items-center justify-between">
-
-      <!-- Logo / Name -->
-      <h1 class="text-white text-lg font-semibold">Lykha</h1>
-
       <!-- Burger Button -->
       <button id="menu-btn" class="lg:hidden text-white text-2xl">
         ☰
@@ -67,8 +63,11 @@
       <p class="text-gray-400 font-medium text-3xl">Ma. Lykha Margarette L. Salustiano</p>
 
       <!-- Title -->
-      <h1 class="text-[80px] font-semibold text-white leading-tight mt-3 whitespace-nowrap">
+      <h1 class="text-[60px] font-semibold text-white leading-tight mt-3 whitespace-nowrap">
         UI/UX Designer
+      </h1>
+      <h1 class="text-[60px] font-semibold text-white leading-tight mt-1 whitespace-nowrap">
+        & Front-End Developer
       </h1>
 
       <!-- Social Icons -->
@@ -251,18 +250,76 @@
 
       <!-- Button -->
       <div>
-        <a 
-          href="files/New_Resume_salustiano.pdf" 
+        <button 
+          onclick="window.location.href='files/New_Resume_salustiano.pdf'"
           download
           class="inline-block mt-4 bg-white text-black font-medium text-sm px-6 py-2 rounded hover:bg-gray-200 transition">
           Download CV
-        </a>
+        </button>
       </div>
 
     </div>
 
   </div>
 
+  </section>
+
+  <section class="w-full max-w-5xl px-6 mx-auto py-16 text-white">
+  
+  <!-- Title -->
+  <h1 class="text-center text-3xl font-semibold mb-12">Skills</h1>
+
+  <!-- Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <!-- Language -->
+    <div class="bg-zinc-900 p-3 rounded-2xl hover:bg-zinc-800 hover:scale-105 duration-300 text-center shadow-xl border border-zinc-800">
+      <h2 class="text-lg font-medium">Language</h2>
+
+      <!-- icons -->
+      <div class="grid grid-cols-3 place-items-center">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775908928/HTML5_logo_and_wordmark.svg-removebg-preview_nu0wat.png" class="[90px] h-[90px] object-contain">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775907414/CSS3_Logo.PNG-removebg-preview_1_jjke8a.png" class="w-[105px] h-[105px] object-contain">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775907412/images-removebg-preview__1_-removebg-preview_atcnak.png" class="w-[105px] h-[105px] mt-2 mr-10 object-contain">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775907412/images__1_-removebg-preview_nfjvst.png" class="w-[105px] h-[105px] ml-[120px] object-contain">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775909108/images__5_-removebg-preview_kfzvtq.png" class="w-[80px] h-[80px] ml-[120px] object-contain">
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="bg-zinc-900 p-3 rounded-2xl hover:bg-zinc-800 hover:scale-105 duration-300 text-center shadow-xl border border-zinc-800">
+      <h2 class="text-lg mb-3 font-medium">Tools</h2>
+
+      <div class="grid grid-cols-3 place-items-center">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775907412/The_GIMP_icon_-_gnome.svg-removebg-preview_svb2of.png" class="w-[105px] h-[105px] object-contain">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775907412/figma_logo-removebg-preview_durcnj.png" class="w-[105px] h-[105px] object-contain">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775907412/images__2_-removebg-preview_cljbel.png" class="w-[70px] h-[70px]   object-contain">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775909584/images__6_-removebg-preview_lqaysb.png" class="w-[70px] h-[70px] ml-[130px] object-contain">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775909616/dfb96cc174513093cd6ed61489ccb750_1_hyiwlc.svg" class="w-[70px] h-[70px] ml-[120px] object-contain">
+      </div>
+    </div>
+
+    <!-- Database -->
+    <div class="bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 hover:scale-105 duration-300 text-center shadow-xl border border-zinc-800">
+      <h2 class="text-lg mb-6 font-medium">Database Management</h2>
+
+      <div class="flex justify-center items-center gap-12">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775909966/images__7_-removebg-preview_cmlwzf.png" class="w-[150px] h-[150px] object-contain">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775907411/channels4_profile-removebg-preview_hownff.png" class="w-[100px] h-[100px] object-contain">
+      </div>
+    </div>
+
+    <!-- AI Tools -->
+    <div class="bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 hover:scale-105 duration-300 text-center shadow-xl border border-zinc-800">
+      <h2 class="text-lg mb-6 font-medium">AI Tools</h2>
+
+      <div class="flex justify-center items-center gap-12">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775907371/Screenshot_2026-04-11_193336-removebg-preview_ehpzfo.png" class="w-[80px] h-[80px] mt-6">
+        <img src="https://res.cloudinary.com/deogcjil5/image/upload/q_auto/f_auto/v1775907411/what-is-claude-ai-3528943545200277_l-removebg-preview_dkqd2b.png" class="w-[80px] h-[80px] mt-6 object-contain">
+      </div>
+    </div>
+
+  </div>
 </section>
 
 </body>
